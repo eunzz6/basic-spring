@@ -15,10 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration //설정·구성 정보
 public class AppConfig {
 
-
-    //Bean memberService -> new MemoryMemberRepository()
-    //Bean orderService -> new MemoryMemberRepository()
-
     @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
